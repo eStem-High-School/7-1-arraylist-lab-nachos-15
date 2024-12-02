@@ -17,10 +17,10 @@ public class POSDictionary
     private Random generator;
 
     // DECLARE FOUR ARRAY LISTS TO CONTAIN NOUNS, VERBS, ADJECTIVES AND ADVERBS
-    ArrayList<String> nouns = new ArrayList<String>();
-    ArrayList<String> verbs = new ArrayList<String>();
-    ArrayList<String> adjectives = new ArrayList<String>();
-    ArrayList<String> adverbs = new ArrayList<String>();
+    ArrayList<String> nouns;
+    ArrayList<String> verbs;
+    ArrayList<String> adjectives;
+    ArrayList<String> adverbs;
     
     /**
      * Instantiate a POSDictionary from a dictionary file. Each word will be on
@@ -47,11 +47,17 @@ public class POSDictionary
     {
         generator = new Random();
 
-        // UNFINISHED.
+        // FINISHED!
         // INSTANTIATE ARRAY LISTS HERE.
+        nouns = new ArrayList<String>();
+        verbs = new ArrayList<String>();
+        adjectives = new ArrayList<String>();
+        adverbs = new ArrayList<String>();
+
 
         // To add to the list, do List.add(element)
         loadFile(posFile);
+        
     }
 
     /**
