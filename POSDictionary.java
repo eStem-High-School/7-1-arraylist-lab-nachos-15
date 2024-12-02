@@ -17,10 +17,10 @@ public class POSDictionary
     private Random generator;
 
     // DECLARE FOUR ARRAY LISTS TO CONTAIN NOUNS, VERBS, ADJECTIVES AND ADVERBS
-    ArrayList<String> nouns;
-    ArrayList<String> verbs;
-    ArrayList<String> adjectives;
-    ArrayList<String> adverbs;
+    private ArrayList<String> nouns;
+    private ArrayList<String> verbs;
+    private ArrayList<String> adjectives;
+    private ArrayList<String> adverbs;
     
     /**
      * Instantiate a POSDictionary from a dictionary file. Each word will be on
@@ -83,7 +83,7 @@ public class POSDictionary
             splitLine = curLine.split(",");
             word = splitLine[0];
             pos = splitLine[1];
-
+            
             // INSERT EACH WORD INTO THE APPROPRIATE ARRAYLIST.
             // THIS IS A GOOD PLACE FOR A SWITCH STATEMENT.   
             // N = Noun   V = Verb   A = Adjective   v = Adverb
@@ -114,10 +114,7 @@ public class POSDictionary
      */
     private String randomWord(ArrayList<String> wordList)
     {
-        // UNFINISHED
-        
-        
-        return "";
+        return wordlist.get((int)(generator.random() * wordlist.size()));
     }
     
     
@@ -155,6 +152,8 @@ public class POSDictionary
         return adverbs.get((int)(generator.random() * adverbs.size()));        
     }
 
+    //Left off here, everything above should be done but needs testing. 
+    
     /**
      * Check a word to see if it is a noun.
      * 
