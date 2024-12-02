@@ -64,7 +64,7 @@ public class POSDictionary
      * Helper method for loading the file. See constructor Javadoc for file
      * format.
      * 
-     *   UNFINISHED.
+     *   FINISHED!
      * 
      * @param posFile - File name of the dictionary file
      * @throws FileNotFoundException - if the file cannot be opened for reading
@@ -115,6 +115,8 @@ public class POSDictionary
     private String randomWord(ArrayList<String> wordList)
     {
         // UNFINISHED
+        
+        
         return "";
     }
     
@@ -126,8 +128,7 @@ public class POSDictionary
      */
     public String randomNoun()
     {
-        // UNFINISHED
-        return "";
+        return nouns.get((int)(generator.random() * nouns.size()));        
     }
 
     /**
@@ -135,8 +136,7 @@ public class POSDictionary
      */
     public String randomVerb()
     {
-        // UNFINISHED
-        return "";
+        return verb.get((int)(generator.random() * verbs.size()));        
     }
 
     /**
@@ -144,8 +144,7 @@ public class POSDictionary
      */
     public String randomAdjective()
     {
-        // UNFINISHED
-        return "";
+        return adjectives.get((int)(generator.random() * adjectives.size()));        
     }
 
     /**
@@ -153,8 +152,7 @@ public class POSDictionary
      */
     public String randomAdverb()
     {
-        // UNFINISHED
-        return "";
+        return adverbs.get((int)(generator.random() * adverbs.size()));        
     }
 
     /**
