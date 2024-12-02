@@ -21,6 +21,7 @@ public class POSDictionary
     ArrayList<String> verbs = new ArrayList<String>();
     ArrayList<String> adjectives = new ArrayList<String>();
     ArrayList<String> adverbs = new ArrayList<String>();
+    
     /**
      * Instantiate a POSDictionary from a dictionary file. Each word will be on
      * a single line, with a comma separating the word from a part of speech
@@ -78,8 +79,22 @@ public class POSDictionary
             pos = splitLine[1];
 
             // INSERT EACH WORD INTO THE APPROPRIATE ARRAYLIST.
-            // THIS IS A GOOD PLACE FOR A SWITCH STATEMENT.
-
+            // THIS IS A GOOD PLACE FOR A SWITCH STATEMENT.   
+            // N = Noun   V = Verb   A = Adjective   v = Adverb
+            switch(pos){
+                case "N":
+                    nouns.add(word);
+                    break;
+                case "V":
+                    verbs.add(word);
+                    break;
+                case "A":
+                    adjectives.add(word);
+                    break;
+                case "v":
+                    adverbs.add(word);
+                    break;
+            }            
         }
         sc.close();
     }
