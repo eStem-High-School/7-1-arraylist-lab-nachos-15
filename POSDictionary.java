@@ -64,8 +64,6 @@ public class POSDictionary
      * Helper method for loading the file. See constructor Javadoc for file
      * format.
      * 
-     *   FINISHED!
-     * 
      * @param posFile - File name of the dictionary file
      * @throws FileNotFoundException - if the file cannot be opened for reading
      */
@@ -151,8 +149,6 @@ public class POSDictionary
     {
         return adverbs.get((int)(generator.random() * adverbs.size()));        
     }
-
-    //Left off here, everything above should be done but needs testing. 
     
     /**
      * Check a word to see if it is a noun.
