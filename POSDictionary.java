@@ -162,8 +162,7 @@ public class POSDictionary
      */
     public boolean isNoun(String word)
     {
-        // UNFINISHED
-        return false;
+        return nouns.contains(word);
     }
 
     /**
@@ -174,8 +173,7 @@ public class POSDictionary
      */
     public boolean isVerb(String word)
     {
-        // UNFINISHED
-        return false;
+        return verbs.contains(word);
     }
 
     /**
@@ -186,8 +184,7 @@ public class POSDictionary
      */
     public boolean isAdjective(String word)
     {
-        // UNFINISHED
-        return false;
+        return adjectives.contains(word);
     }
 
     /**
@@ -198,7 +195,6 @@ public class POSDictionary
      */
     public boolean isAdverb(String word)
     {        
-        // UNFINISHED
-        return false;
+        return adverbs.contains(word);
     }
 }
