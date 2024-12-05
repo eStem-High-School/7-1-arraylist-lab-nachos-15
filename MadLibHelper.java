@@ -11,7 +11,6 @@ import java.io.FileNotFoundException;
  */
 public class MadLibHelper
 {
-
     /**
      * The main loads a POSDictionary, then interacts with the user through the
      * terminal.
@@ -26,7 +25,7 @@ public class MadLibHelper
         try
         {
 
-            posDict = new POSDictionary(args[0]);
+            posDict = new POSDictionary("pos_dict.txt");
             scanner = new Scanner(System.in);
 
             System.out.println("Welcome to MadLib Helper!");
@@ -63,6 +62,10 @@ public class MadLibHelper
         {
             System.out.println("Usage: java MadLibHelper POSFILE");
         }
+    }
+
+    public static void playGame(POSDictionary posDict){
+        System.out.println("The " + posDict.randomAdjective() + " " + posDict.randomNoun() + " was " + posDict.randomVerb() + " " + posDict.randomAdverb() + " across the " + posDict.randomNoun());
     }
 
 }

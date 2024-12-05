@@ -25,7 +25,7 @@ public class POSChecker
         try
         {
 
-            posDict = new POSDictionary(args[0]);
+            posDict = new POSDictionary("pos_dict.txt");
             scanner = new Scanner(System.in);
 
             System.out.println("Welcome to the POS checker!");

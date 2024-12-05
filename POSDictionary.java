@@ -112,7 +112,7 @@ public class POSDictionary
      */
     private String randomWord(ArrayList<String> wordList)
     {
-        return wordlist.get((int)(generator.random() * wordlist.size()));
+        return wordList.get(generator.nextInt(wordList.size()));
     }
     
     
@@ -123,7 +123,7 @@ public class POSDictionary
      */
     public String randomNoun()
     {
-        return nouns.get((int)(generator.random() * nouns.size()));        
+        return nouns.get(generator.nextInt(nouns.size()));        
     }
 
     /**
@@ -131,7 +131,7 @@ public class POSDictionary
      */
     public String randomVerb()
     {
-        return verb.get((int)(generator.random() * verbs.size()));        
+        return verbs.get(generator.nextInt(verbs.size()));        
     }
 
     /**
@@ -139,7 +139,7 @@ public class POSDictionary
      */
     public String randomAdjective()
     {
-        return adjectives.get((int)(generator.random() * adjectives.size()));        
+        return adjectives.get(generator.nextInt(adjectives.size()));        
     }
 
     /**
@@ -147,7 +147,7 @@ public class POSDictionary
      */
     public String randomAdverb()
     {
-        return adverbs.get((int)(generator.random() * adverbs.size()));        
+        return adverbs.get(generator.nextInt(adverbs.size()));        
     }
     
     /**
